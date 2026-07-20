@@ -17,7 +17,10 @@ export const formatFileSize = (size: number | string, currentLanguage: string) =
   return filesize(parsedSize, {
     round: parsedSize < mb ? 0 : 1,
     locale: getLocaleFromLanguage(currentLanguage),
-    base: 10,
+    // PrivoHub: IEC units (KiB/MiB/GiB) rather than upstream's decimal base 10.
+    // Storage quota is enforced by a ZFS refquota, which is binary, so decimal
+    // formatting made the displayed usage disagree with the enforced cap by ~10%.
+    base: 2,
     output: 'string'
   })
 }

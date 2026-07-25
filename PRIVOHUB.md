@@ -24,7 +24,7 @@ about one from the other.
 | | Private | Public |
 |---|---|---|
 | Remote | `origin` / `gitea` | `github` (`PrivoHub/opencloud-web`) |
-| Branch | `privohub/v6.2.0` | `privohub/v6.2.0` |
+| Branch | `privohub/v7.2.0` | `privohub/v7.2.0` |
 | Contents | identical | identical |
 
 **Unlike the Photos and Vault forks, nothing is stripped here.** There is no
@@ -50,7 +50,7 @@ Do not add `Co-Authored-By`/`Signed-off-by` trailers naming a person.
 
 ## The version lockstep rule — this is the one that bites
 
-The branch is named for the upstream tag it sits on (`privohub/v6.2.0`), and that
+The branch is named for the upstream tag it sits on (`privohub/v7.2.0`), and that
 tag **must equal `WEB_ASSETS_VERSION` in the server fork's
 `services/web/Makefile`**. The server embeds the built web bundle; if the two
 drift, Drive ships a client built from a different release than the server

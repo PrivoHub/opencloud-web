@@ -7,6 +7,12 @@
       <div v-if="isIE11" class="bg-role-surface-container text-center py-4">
         <p class="m-0" v-text="ieDeprecationWarning" />
       </div>
+      <!--
+        PrivoHub: above the top bar rather than in the snackbar stack, because a
+        full quota is a standing condition and not an event - a toast that had
+        been dismissed would leave someone wondering why their uploads fail.
+      -->
+      <privohub-storage-banner />
       <top-bar />
     </div>
     <div
@@ -57,6 +63,7 @@ import {
 import { useIsMobile } from '@opencloud-eu/design-system/composables'
 import TopBar from '../components/Topbar/TopBar.vue'
 import MessageBar from '../components/MessageBar.vue'
+import PrivohubStorageBanner from '../components/PrivohubStorageBanner.vue'
 import SidebarNav from '../components/SidebarNav/SidebarNav.vue'
 import UploadInfo from '../components/UploadInfo.vue'
 import { useRouteMeta, useSpacesLoading, useNavItems } from '@opencloud-eu/web-pkg'

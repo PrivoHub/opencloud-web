@@ -90,6 +90,32 @@
           </li>
           <li class="flex items-center">
             <oc-button
+              id="oc-topbar-privohub-storage"
+              type="a"
+              appearance="raw"
+              justify-content="left"
+              :href="manageStorageUrl"
+              target="_blank"
+            >
+              <oc-icon name="hard-drive-2" fill-type="line" />
+              <span v-text="$gettext('Manage storage')" />
+            </oc-button>
+          </li>
+          <li class="flex items-center">
+            <oc-button
+              id="oc-topbar-privohub-portal"
+              type="a"
+              appearance="raw"
+              justify-content="left"
+              :href="portalHomeUrl"
+              target="_blank"
+            >
+              <oc-icon name="external-link" fill-type="line" />
+              <span v-text="$gettext('PrivoHub portal')" />
+            </oc-button>
+          </li>
+          <li class="flex items-center">
+            <oc-button
               id="oc-topbar-account-logout"
               appearance="raw"
               justify-content="left"
@@ -157,6 +183,7 @@ import {
   useUserStore
 } from '@opencloud-eu/web-pkg'
 import QuotaInformation from '../Account/QuotaInformation.vue'
+import { portalUrl } from '../../helpers/privohub'
 
 const route = useRoute()
 const userStore = useUserStore()
@@ -193,4 +220,12 @@ const showFooter = computed(() => {
 const quota = computed(() => {
   return spacesStore.personalSpace?.spaceQuota
 })
+
+// PrivoHub: storage and billing are managed in the portal, not here. The tenant
+// owner is an admin of their own Drive, so the quota rendered above is reported
+// from their plan rather than from anything editable in this app, and the
+// portal is the only place it can be changed. Mirrors the entries the Immich
+// fork puts in the same dropdown, so the same button exists in both products.
+const manageStorageUrl = portalUrl('/storage')
+const portalHomeUrl = portalUrl()
 </script>

@@ -1,7 +1,7 @@
 import { filesize } from 'filesize'
 import { getLocaleFromLanguage } from './locale'
 
-const mb = 1048576
+const mb = 1000000
 
 // Returns formatted size
 export const formatFileSize = (size: number | string, currentLanguage: string) => {
@@ -17,10 +17,9 @@ export const formatFileSize = (size: number | string, currentLanguage: string) =
   return filesize(parsedSize, {
     round: parsedSize < mb ? 0 : 1,
     locale: getLocaleFromLanguage(currentLanguage),
-    // PrivoHub: IEC units (KiB/MiB/GiB) rather than upstream's decimal base 10.
-    // Storage quota is enforced by a ZFS refquota, which is binary, so decimal
-    // formatting made the displayed usage disagree with the enforced cap by ~10%.
-    base: 2,
+    // Decimal units (kB/MB/GB), same as upstream: storage sizes are quoted and
+    // enforced in powers of 1000, so displayed usage matches the quota.
+    base: 10,
     output: 'string'
   })
 }

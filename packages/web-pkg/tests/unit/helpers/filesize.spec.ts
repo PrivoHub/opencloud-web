@@ -5,10 +5,9 @@ describe('formatFileSize', () => {
     it.each([
       [0, '0 B'],
       [1, '1 B'],
-      // 1023 stays in bytes under base 2 (upstream's base 10 rolled it to 1 kB)
-      [1023, '1023 B'],
-      [1024, '1 KiB'],
-      [1287654323, '1.2 GiB']
+      [999, '999 B'],
+      [1000, '1 kB'],
+      [1287654323, '1.3 GB']
     ])('input "%s"', (input: number, expected: string) => {
       expect(formatFileSize(input, '')).toEqual(expected)
     })
@@ -16,17 +15,17 @@ describe('formatFileSize', () => {
   describe('converts string input to a human readable format', () => {
     it.each([
       ['0', '0 B'],
-      ['1287654323', '1.2 GiB']
+      ['1287654323', '1.3 GB']
     ])('input "%s"', (input: string, expected: string) => {
       expect(formatFileSize(input, '')).toEqual(expected)
     })
   })
   describe('rounds values', () => {
     it('to integers if file size below 1 MB', () => {
-      expect(formatFileSize(4321, '')).toBe('4 KiB')
+      expect(formatFileSize(4321, '')).toBe('4 kB')
     })
     it('to 1 decimal if file size above 1 MB', () => {
-      expect(formatFileSize(4321000, '')).toBe('4.1 MiB')
+      expect(formatFileSize(4321000, '')).toBe('4.3 MB')
     })
   })
   describe('handles invalid input', () => {
@@ -40,8 +39,8 @@ describe('formatFileSize', () => {
   })
   describe('respects different locales', () => {
     it.each([
-      ['en', 1287654323, '1.2 GiB'],
-      ['de', 1287654323, '1,2 GiB']
+      ['en', 1287654323, '1.3 GB'],
+      ['de', 1287654323, '1,3 GB']
     ])('language "%s"', (language: string, input: number, expected: string) => {
       expect(formatFileSize(input, language)).toEqual(expected)
     })

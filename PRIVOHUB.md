@@ -67,6 +67,8 @@ On an upstream bump:
    upstream changes shared components; check the diff is only that before `-u`.
 3. Push to `origin`, then `public`, and set the server fork's `WEB_ASSETS_REF` to
    the new branch in the same change.
+4. Make the new branch the default branch of both Forgejo repos and the GitHub
+   mirror (the mirror copies refs, never the default-branch setting).
 
 ## Make changes in source
 

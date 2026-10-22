@@ -12,6 +12,10 @@ tracks upstream except a small set of changes:
   links to the PrivoHub portal and a banner when storage runs low or is full.
   `helpers/privohub.ts` must stay identical to its twin in the Photos (Immich)
   fork, so the same button lands in the same place from either app.
+- **`logoPlain` theme key** (`web-pkg` theme schema, `web-runtime` `PlainShell`): the
+  plain pages (public link password, access denied, logged out) sit on the
+  surface colours while `logo` sits on the top bar, so a theme with a dark top bar
+  needs a second logo for them. Falls back to `logo`.
 
 ## This fork is public, and must be
 

@@ -46,7 +46,7 @@ const backgroundImgStyle = computed(() => {
   return unref(backgroundImg) ? { backgroundImage: `url(${unref(backgroundImg)})` } : {}
 })
 const logoImg = computed(() => {
-  const logo = unref(currentTheme)?.logo
+  const logo = unref(currentTheme)?.logoPlain || unref(currentTheme)?.logo
   return logo ? addVersionToAssetUrl(logo) : null
 })
 const footerSlogan = computed(() => unref(currentTheme)?.slogan)

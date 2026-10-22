@@ -40,7 +40,12 @@ const DesignTokens = z.object({
 const WebDefaults = CommonSection.extend({
   designTokens: DesignTokens.optional(),
   favicon: z.string().optional(),
-  background: z.string().optional()
+  background: z.string().optional(),
+  // PrivoHub: logo for the plain pages (public link password, access denied,
+  // logged out). They sit on the surface colours, while `logo` sits on the top
+  // bar, so a theme with a dark top bar and a light surface needs both.
+  // Falls back to `logo`.
+  logoPlain: z.string().optional()
 })
 
 const WebTheme = WebDefaults.extend({

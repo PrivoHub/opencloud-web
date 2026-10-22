@@ -15,12 +15,12 @@ exports[`User Menu component > when no quota and email is set > the user menu do
       </li>
       <li class="flex items-center">
         <oc-button-stub href="https://privohub.com/portal/storage" target="_blank" appearance="raw" colorrole="secondary" disabled="false" gapsize="medium" justifycontent="left" showspinner="false" size="medium" submit="button" type="a" nohover="false" id="oc-topbar-privohub-storage">
-          <oc-icon-stub accessiblelabel="" color="" filltype="line" name="hard-drive-2" sizeclass="size-5" type="span"></oc-icon-stub> <span>Manage storage</span>
+          <oc-icon-stub accessiblelabel="" color="" filltype="line" name="hard-drive-2" sizeclass="size-5" type="span" uniqueids="false"></oc-icon-stub> <span>Manage storage</span>
         </oc-button-stub>
       </li>
       <li class="flex items-center">
         <oc-button-stub href="https://privohub.com/portal" target="_blank" appearance="raw" colorrole="secondary" disabled="false" gapsize="medium" justifycontent="left" showspinner="false" size="medium" submit="button" type="a" nohover="false" id="oc-topbar-privohub-portal">
-          <oc-icon-stub accessiblelabel="" color="" filltype="line" name="external-link" sizeclass="size-5" type="span"></oc-icon-stub> <span>PrivoHub portal</span>
+          <oc-icon-stub accessiblelabel="" color="" filltype="line" name="external-link" sizeclass="size-5" type="span" uniqueids="false"></oc-icon-stub> <span>PrivoHub portal</span>
         </oc-button-stub>
       </li>
       <li class="flex items-center">
@@ -50,12 +50,12 @@ exports[`User Menu component > when no quota and no email is set > the user menu
       </li>
       <li class="flex items-center">
         <oc-button-stub href="https://privohub.com/portal/storage" target="_blank" appearance="raw" colorrole="secondary" disabled="false" gapsize="medium" justifycontent="left" showspinner="false" size="medium" submit="button" type="a" nohover="false" id="oc-topbar-privohub-storage">
-          <oc-icon-stub accessiblelabel="" color="" filltype="line" name="hard-drive-2" sizeclass="size-5" type="span"></oc-icon-stub> <span>Manage storage</span>
+          <oc-icon-stub accessiblelabel="" color="" filltype="line" name="hard-drive-2" sizeclass="size-5" type="span" uniqueids="false"></oc-icon-stub> <span>Manage storage</span>
         </oc-button-stub>
       </li>
       <li class="flex items-center">
         <oc-button-stub href="https://privohub.com/portal" target="_blank" appearance="raw" colorrole="secondary" disabled="false" gapsize="medium" justifycontent="left" showspinner="false" size="medium" submit="button" type="a" nohover="false" id="oc-topbar-privohub-portal">
-          <oc-icon-stub accessiblelabel="" color="" filltype="line" name="external-link" sizeclass="size-5" type="span"></oc-icon-stub> <span>PrivoHub portal</span>
+          <oc-icon-stub accessiblelabel="" color="" filltype="line" name="external-link" sizeclass="size-5" type="span" uniqueids="false"></oc-icon-stub> <span>PrivoHub portal</span>
         </oc-button-stub>
       </li>
       <li class="flex items-center">
@@ -85,12 +85,12 @@ exports[`User Menu component > when quota and no email is set > renders a naviga
       </li>
       <li class="flex items-center">
         <oc-button-stub href="https://privohub.com/portal/storage" target="_blank" appearance="raw" colorrole="secondary" disabled="false" gapsize="medium" justifycontent="left" showspinner="false" size="medium" submit="button" type="a" nohover="false" id="oc-topbar-privohub-storage">
-          <oc-icon-stub accessiblelabel="" color="" filltype="line" name="hard-drive-2" sizeclass="size-5" type="span"></oc-icon-stub> <span>Manage storage</span>
+          <oc-icon-stub accessiblelabel="" color="" filltype="line" name="hard-drive-2" sizeclass="size-5" type="span" uniqueids="false"></oc-icon-stub> <span>Manage storage</span>
         </oc-button-stub>
       </li>
       <li class="flex items-center">
         <oc-button-stub href="https://privohub.com/portal" target="_blank" appearance="raw" colorrole="secondary" disabled="false" gapsize="medium" justifycontent="left" showspinner="false" size="medium" submit="button" type="a" nohover="false" id="oc-topbar-privohub-portal">
-          <oc-icon-stub accessiblelabel="" color="" filltype="line" name="external-link" sizeclass="size-5" type="span"></oc-icon-stub> <span>PrivoHub portal</span>
+          <oc-icon-stub accessiblelabel="" color="" filltype="line" name="external-link" sizeclass="size-5" type="span" uniqueids="false"></oc-icon-stub> <span>PrivoHub portal</span>
         </oc-button-stub>
       </li>
       <li class="flex items-center">
@@ -119,12 +119,12 @@ exports[`User Menu component > when quota is above 80% and below 90% > renders a
       </li>
       <li class="flex items-center">
         <oc-button-stub href="https://privohub.com/portal/storage" target="_blank" appearance="raw" colorrole="secondary" disabled="false" gapsize="medium" justifycontent="left" showspinner="false" size="medium" submit="button" type="a" nohover="false" id="oc-topbar-privohub-storage">
-          <oc-icon-stub accessiblelabel="" color="" filltype="line" name="hard-drive-2" sizeclass="size-5" type="span"></oc-icon-stub> <span>Manage storage</span>
+          <oc-icon-stub accessiblelabel="" color="" filltype="line" name="hard-drive-2" sizeclass="size-5" type="span" uniqueids="false"></oc-icon-stub> <span>Manage storage</span>
         </oc-button-stub>
       </li>
       <li class="flex items-center">
         <oc-button-stub href="https://privohub.com/portal" target="_blank" appearance="raw" colorrole="secondary" disabled="false" gapsize="medium" justifycontent="left" showspinner="false" size="medium" submit="button" type="a" nohover="false" id="oc-topbar-privohub-portal">
-          <oc-icon-stub accessiblelabel="" color="" filltype="line" name="external-link" sizeclass="size-5" type="span"></oc-icon-stub> <span>PrivoHub portal</span>
+          <oc-icon-stub accessiblelabel="" color="" filltype="line" name="external-link" sizeclass="size-5" type="span" uniqueids="false"></oc-icon-stub> <span>PrivoHub portal</span>
         </oc-button-stub>
       </li>
       <li class="flex items-center">
@@ -153,12 +153,12 @@ exports[`User Menu component > when quota is above 90% > renders a danger quota 
       </li>
       <li class="flex items-center">
         <oc-button-stub href="https://privohub.com/portal/storage" target="_blank" appearance="raw" colorrole="secondary" disabled="false" gapsize="medium" justifycontent="left" showspinner="false" size="medium" submit="button" type="a" nohover="false" id="oc-topbar-privohub-storage">
-          <oc-icon-stub accessiblelabel="" color="" filltype="line" name="hard-drive-2" sizeclass="size-5" type="span"></oc-icon-stub> <span>Manage storage</span>
+          <oc-icon-stub accessiblelabel="" color="" filltype="line" name="hard-drive-2" sizeclass="size-5" type="span" uniqueids="false"></oc-icon-stub> <span>Manage storage</span>
         </oc-button-stub>
       </li>
       <li class="flex items-center">
         <oc-button-stub href="https://privohub.com/portal" target="_blank" appearance="raw" colorrole="secondary" disabled="false" gapsize="medium" justifycontent="left" showspinner="false" size="medium" submit="button" type="a" nohover="false" id="oc-topbar-privohub-portal">
-          <oc-icon-stub accessiblelabel="" color="" filltype="line" name="external-link" sizeclass="size-5" type="span"></oc-icon-stub> <span>PrivoHub portal</span>
+          <oc-icon-stub accessiblelabel="" color="" filltype="line" name="external-link" sizeclass="size-5" type="span" uniqueids="false"></oc-icon-stub> <span>PrivoHub portal</span>
         </oc-button-stub>
       </li>
       <li class="flex items-center">
@@ -187,12 +187,12 @@ exports[`User Menu component > when quota is below 80% > renders a primary quota
       </li>
       <li class="flex items-center">
         <oc-button-stub href="https://privohub.com/portal/storage" target="_blank" appearance="raw" colorrole="secondary" disabled="false" gapsize="medium" justifycontent="left" showspinner="false" size="medium" submit="button" type="a" nohover="false" id="oc-topbar-privohub-storage">
-          <oc-icon-stub accessiblelabel="" color="" filltype="line" name="hard-drive-2" sizeclass="size-5" type="span"></oc-icon-stub> <span>Manage storage</span>
+          <oc-icon-stub accessiblelabel="" color="" filltype="line" name="hard-drive-2" sizeclass="size-5" type="span" uniqueids="false"></oc-icon-stub> <span>Manage storage</span>
         </oc-button-stub>
       </li>
       <li class="flex items-center">
         <oc-button-stub href="https://privohub.com/portal" target="_blank" appearance="raw" colorrole="secondary" disabled="false" gapsize="medium" justifycontent="left" showspinner="false" size="medium" submit="button" type="a" nohover="false" id="oc-topbar-privohub-portal">
-          <oc-icon-stub accessiblelabel="" color="" filltype="line" name="external-link" sizeclass="size-5" type="span"></oc-icon-stub> <span>PrivoHub portal</span>
+          <oc-icon-stub accessiblelabel="" color="" filltype="line" name="external-link" sizeclass="size-5" type="span" uniqueids="false"></oc-icon-stub> <span>PrivoHub portal</span>
         </oc-button-stub>
       </li>
       <li class="flex items-center">
@@ -221,12 +221,12 @@ exports[`User Menu component > when quota is not defined > renders no percentag 
       </li>
       <li class="flex items-center">
         <oc-button-stub href="https://privohub.com/portal/storage" target="_blank" appearance="raw" colorrole="secondary" disabled="false" gapsize="medium" justifycontent="left" showspinner="false" size="medium" submit="button" type="a" nohover="false" id="oc-topbar-privohub-storage">
-          <oc-icon-stub accessiblelabel="" color="" filltype="line" name="hard-drive-2" sizeclass="size-5" type="span"></oc-icon-stub> <span>Manage storage</span>
+          <oc-icon-stub accessiblelabel="" color="" filltype="line" name="hard-drive-2" sizeclass="size-5" type="span" uniqueids="false"></oc-icon-stub> <span>Manage storage</span>
         </oc-button-stub>
       </li>
       <li class="flex items-center">
         <oc-button-stub href="https://privohub.com/portal" target="_blank" appearance="raw" colorrole="secondary" disabled="false" gapsize="medium" justifycontent="left" showspinner="false" size="medium" submit="button" type="a" nohover="false" id="oc-topbar-privohub-portal">
-          <oc-icon-stub accessiblelabel="" color="" filltype="line" name="external-link" sizeclass="size-5" type="span"></oc-icon-stub> <span>PrivoHub portal</span>
+          <oc-icon-stub accessiblelabel="" color="" filltype="line" name="external-link" sizeclass="size-5" type="span" uniqueids="false"></oc-icon-stub> <span>PrivoHub portal</span>
         </oc-button-stub>
       </li>
       <li class="flex items-center">
@@ -255,12 +255,12 @@ exports[`User Menu component > when quota is unlimited > renders no percentag of
       </li>
       <li class="flex items-center">
         <oc-button-stub href="https://privohub.com/portal/storage" target="_blank" appearance="raw" colorrole="secondary" disabled="false" gapsize="medium" justifycontent="left" showspinner="false" size="medium" submit="button" type="a" nohover="false" id="oc-topbar-privohub-storage">
-          <oc-icon-stub accessiblelabel="" color="" filltype="line" name="hard-drive-2" sizeclass="size-5" type="span"></oc-icon-stub> <span>Manage storage</span>
+          <oc-icon-stub accessiblelabel="" color="" filltype="line" name="hard-drive-2" sizeclass="size-5" type="span" uniqueids="false"></oc-icon-stub> <span>Manage storage</span>
         </oc-button-stub>
       </li>
       <li class="flex items-center">
         <oc-button-stub href="https://privohub.com/portal" target="_blank" appearance="raw" colorrole="secondary" disabled="false" gapsize="medium" justifycontent="left" showspinner="false" size="medium" submit="button" type="a" nohover="false" id="oc-topbar-privohub-portal">
-          <oc-icon-stub accessiblelabel="" color="" filltype="line" name="external-link" sizeclass="size-5" type="span"></oc-icon-stub> <span>PrivoHub portal</span>
+          <oc-icon-stub accessiblelabel="" color="" filltype="line" name="external-link" sizeclass="size-5" type="span" uniqueids="false"></oc-icon-stub> <span>PrivoHub portal</span>
         </oc-button-stub>
       </li>
       <li class="flex items-center">

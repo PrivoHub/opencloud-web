@@ -60,6 +60,13 @@
           <span aria-hidden="true" class="hidden group-hover:inline">🤗</span>
         </a>
         <span v-text="backendVersion" />
+        <a
+          href="https://git.privohub.com/PrivoHub/opencloud"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="oc-sidebar-nav-source-link self-start hover:underline"
+          v-text="$gettext('Source code')"
+        />
         <version-check />
       </div>
     </div>
